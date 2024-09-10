@@ -2,7 +2,7 @@ function App() {
 
 
   return (
-    <h1>Heelo react with vite | Sahil</h1>
+    <dash/>
   )
 }
 
