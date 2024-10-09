@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -12,12 +10,21 @@ function App() {
 
     // console.log("clicked", counter);
     // counter = counter +1
-    setCounter(counter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // useState Updates ui and variable through batched
+    // Update same setCoutner with fiber by batch and multiple setCounter is updated as one and the value is change one time   
   }
   const removeValue = () => {
     if (setCounter < 0) {
-      counter =0
-    }else{
+      counter = 0
+    } else {
 
       setCounter(counter - 1)
     }
@@ -27,10 +34,11 @@ function App() {
 
       <h1>React learning</h1>
       <h2>Counter value: {counter}</h2>
-
+      {/* Add values from button */}
       <button onClick={addValue}
       >Add value {counter}</button>
       <br />
+      {/* Decrease values from button */}
       <button onClick={removeValue}>Remove value {counter}</button>
       <p>footer: {counter}</p>
     </>
