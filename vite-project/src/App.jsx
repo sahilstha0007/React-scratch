@@ -1,25 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Ex from './components/Ex'
 
-function App() {
-
-  const [a, setA] = useState(10)
-
-
-  const submitHandler = (e) => {
-    e.preventDefault()
-  }
+const App = () => {
   return (
     <>
-      <form action=""
-        onSubmit={ }
-      >
+    <div className='text-white'>
 
-        <input type="text" name="" id=""
-          className=''
-          placeholder='Enter Your Name'
-        />
-        <button className=''>Submit</button>
-      </form>
+      <Ex name="sahil"/>
+    </div>
+      
+
     </>
   )
 }
